@@ -16,13 +16,12 @@ const PokemonCard = ({name, url}) => {
     }, [url, handlePokemonData])
 
     return (
-        <Card>
+        <Card className="pokemonCard">
             <header>
                 <img alt='Front Pokemon Sprite' src={pokemonData.sprites && pokemonData.sprites.front_default}></img>
-                {name}
             </header>
             <section>
-                {url}
+                {name}
             </section>
         </Card>
     );
